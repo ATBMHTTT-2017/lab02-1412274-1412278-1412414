@@ -84,7 +84,7 @@ BEGIN
 update nhanvien  set luong = encrypted_raw , khoa = key_hash where nhanvien.mannv = manv;
   commit;
   End;
-END THEM_NV_LUONG;
+END Updat_LUONG;
 -- ham giai ma
 CREATE OR REPLACE PROCEDURE XemLuong
 (
