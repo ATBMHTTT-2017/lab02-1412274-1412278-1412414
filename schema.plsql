@@ -161,11 +161,11 @@ begin
 end;
 
 --Thêm trưởng chi nhánh cho các chi nhánh
-execute themNhanVien('NV01', 'Phan Khánh Lâm', '236 Bà Hạt quận 10 Hồ Chí Minh', '01685432118', 'khanhlamphan@gmail.com', 'NSHCM', 'CNHCM', 30000000);
-execute themNhanVien('NV02', 'Nguyễn Hoàng Kim', '35C đường 3 tháng 2 Q.10, Hồ Chí Minh', '016752145365', 'hoangkimnguyen@gmail.com', 'KHHN', 'CNHN', 30000000);
-execute themNhanVien('NV03', 'Vương Thiên Phú', '35 đường ba tháng hai, Hồ Chí Minh', '016485265842', 'thienphuvuong@gmail.com', 'KTDN', 'CNDN', 30000000);
-execute themNhanVien('NV04', 'Vương Ngọc Kim', '93 Hoàng Hoa Thám, Bình Thạnh, Hồ Chí Minh', '0903884632', 'ngockimvuong@gmail.com', 'NSHP', 'CNHP', 30000000);
-execute themNhanVien('NV05', 'Lý Nam Cường', 'Võ Văn Ngân, Thủ Đức, Hồ Chí Minh', '0904885310', 'namcuongly@gmail.com', 'KHCT', 'CNCT', 30000000);
+execute  THEM_NV_LUONG('NV01', 'Phan Khánh Lâm', '236 Bà Hạt quận 10 Hồ Chí Minh', '01685432118', 'khanhlamphan@gmail.com', 'NSHCM', 'CNHCM', 30000000);
+execute  THEM_NV_LUONG('NV02', 'Nguyễn Hoàng Kim', '35C đường 3 tháng 2 Q.10, Hồ Chí Minh', '016752145365', 'hoangkimnguyen@gmail.com', 'KHHN', 'CNHN', 30000000);
+execute  THEM_NV_LUONG('NV03', 'Vương Thiên Phú', '35 đường ba tháng hai, Hồ Chí Minh', '016485265842', 'thienphuvuong@gmail.com', 'KTDN', 'CNDN', 30000000);
+execute  THEM_NV_LUONG('NV04', 'Vương Ngọc Kim', '93 Hoàng Hoa Thám, Bình Thạnh, Hồ Chí Minh', '0903884632', 'ngockimvuong@gmail.com', 'NSHP', 'CNHP', 30000000);
+execute  THEM_NV_LUONG('NV05', 'Lý Nam Cường', 'Võ Văn Ngân, Thủ Đức, Hồ Chí Minh', '0904885310', 'namcuongly@gmail.com', 'KHCT', 'CNCT', 30000000);
 execute capNhatTruongChiNhanh ('NV01', 'CNHCM');
 execute capNhatTruongChiNhanh ('NV02', 'CNHN');
 execute capNhatTruongChiNhanh ('NV03', 'CNDN');
@@ -182,21 +182,21 @@ begin
 end;
 
 --Thêm trưởng phòng ban cho các phòng ban
-execute themNhanVien('NV06', 'Trần Thiên Hoàng', '236 Bà Hạt quận 10 Hồ Chí Minh', '01685432118', 'tranthienhoang@gmail.com', 'NSHCM', 'CNHCM', 20000000);
-execute themNhanVien('NV07', 'Lý Văn Phụng', '23-36 Nguyễn Huệ, Q. 1, Tp. Hồ Chí Minh', '016752145365', 'phunglyvan@gmail.com', 'KTHCM', 'CNHCM', 20000000);
-execute themNhanVien('NV08', 'Đặng Vỹ Thành', ' 88 Đồng Khởi, Q. 1, Tp. Hồ Chí Minh,', '016485265842', 'vythanhdang@gmail.com', 'KHHCM', 'CNHCM', 20000000);
-execute themNhanVien('NV09', 'Nguyễn Hoàng Phúc', '157 Pasteur, Q. 3, Tp. Hồ Chí Minh', '0903884632', 'hoangphucnguyen@gmail.com', 'NSHN', 'CNHN', 20000000);
-execute themNhanVien('NV10', 'Vũ Thị Hải', '73 Hoàng Văn Thái, Q. 7', '0904885310', 'vuthihai@gmail.com', 'KTHN', 'CNHN', 20000000);
-execute themNhanVien('NV11', 'Huỳnh Hoạn Nhi', '140 Lý Tự Trọng, Q. 1', '01685432118', 'nhihuynhhoan@gmail.com', 'KHHN', 'CNHN', 20000000);
-execute themNhanVien('NV12', 'Bành Lệ Doanh', '35C đường 3 tháng 2 Q.10, Hồ Chí Minh', '016752145365', 'ledoanhbanh@gmail.com', 'NSDN', 'CNDN', 20000000);
-execute themNhanVien('NV13', 'Phù Hàn Dũng', ' 8 Đồng Khởi, Q. 1', '016485265842', 'handungphu@gmail.com', 'KTDN', 'CNDN', 20000000);
-execute themNhanVien('NV14', 'Vương Ngọc Trân', '93 Hoàng Hoa Thám, Bình Thạnh, Hồ Chí Minh', '0903884632', 'ngoctranvuong@gmail.com', 'KHDN', 'CNDN', 20000000);
-execute themNhanVien('NV15', 'La Ngọc Loan', '157 Pasteur, Q. 3, Tp. Hồ Chí Minh', '0904885310', 'ngocloan@gmail.com', 'NSHP', 'CNHP', 20000000);
-execute themNhanVien('NV16', 'Trần Gia Linh', ' 8 Đồng Khởi, Q. 1', '01685432118', 'gialinh@gmail.com', 'KHHP', 'CNHP', 20000000);
-execute themNhanVien('NV17', 'Nguyễn Lệ', ' 97 Bùi Viện, Q. 1, TP. Hồ Chí Minh', '016752145365', 'lenguyen@gmail.com', 'KTHP', 'CNHP', 20000000);
-execute themNhanVien('NV18', 'Trần Gia Hân', '35 đường ba tháng hai, Hồ Chí Minh', '016485265842', 'giahan@gmail.com', 'NSCT', 'CNCT', 20000000);
-execute themNhanVien('NV19', 'Hồ Đức Hải', ' 8 Đồng Khởi, Q. 1', '0903884632', 'hoduchai@gmail.com', 'KTCT', 'CNCT', 20000000);
-execute themNhanVien('NV20', 'Trần Thiệu Hải', 'Võ Văn Ngân, Thủ Đức, Hồ Chí Minh', '0904885310', 'thieuhaitran@gmail.com', 'KHCT', 'CNCT', 20000000);
+execute  THEM_NV_LUONG('NV06', 'Trần Thiên Hoàng', '236 Bà Hạt quận 10 Hồ Chí Minh', '01685432118', 'tranthienhoang@gmail.com', 'NSHCM', 'CNHCM', 20000000,'tranthienhoang@gmail.com');
+execute  THEM_NV_LUONG('NV07', 'Lý Văn Phụng', '23-36 Nguyễn Huệ, Q. 1, Tp. Hồ Chí Minh', '016752145365', 'phunglyvan@gmail.com', 'KTHCM', 'CNHCM', 20000000,'tranthienhoang@gmail.com';
+execute  THEM_NV_LUONG('NV08', 'Đặng Vỹ Thành', ' 88 Đồng Khởi, Q. 1, Tp. Hồ Chí Minh,', '016485265842', 'vythanhdang@gmail.com', 'KHHCM', 'CNHCM', 20000000,'vythanhdang@gmail.com');
+execute  THEM_NV_LUONG('NV09', 'Nguyễn Hoàng Phúc', '157 Pasteur, Q. 3, Tp. Hồ Chí Minh', '0903884632', 'hoangphucnguyen@gmail.com', 'NSHN', 'CNHN', 20000000,'hoangphucnguyen@gmail.com');
+execute  THEM_NV_LUONG('NV10', 'Vũ Thị Hải', '73 Hoàng Văn Thái, Q. 7', '0904885310', 'vuthihai@gmail.com', 'KTHN', 'CNHN', 20000000,'vuthihai@gmail.com');
+execute  THEM_NV_LUONG('NV11', 'Huỳnh Hoạn Nhi', '140 Lý Tự Trọng, Q. 1', '01685432118', 'nhihuynhhoan@gmail.com', 'KHHN', 'CNHN', 20000000,'nhihuynhhoan@gmail.com');
+execute  THEM_NV_LUONG('NV12', 'Bành Lệ Doanh', '35C đường 3 tháng 2 Q.10, Hồ Chí Minh', '016752145365', 'ledoanhbanh@gmail.com', 'NSDN', 'CNDN', 20000000,'ledoanhbanh@gmail.com');
+execute  THEM_NV_LUONG('NV13', 'Phù Hàn Dũng', ' 8 Đồng Khởi, Q. 1', '016485265842', 'handungphu@gmail.com', 'KTDN', 'CNDN', 20000000,'handungphu@gmail.com');
+execute  THEM_NV_LUONG('NV14', 'Vương Ngọc Trân', '93 Hoàng Hoa Thám, Bình Thạnh, Hồ Chí Minh', '0903884632', 'ngoctranvuong@gmail.com', 'KHDN', 'CNDN', 20000000,'ngoctranvuong@gmail.com');
+execute  THEM_NV_LUONG('NV15', 'La Ngọc Loan', '157 Pasteur, Q. 3, Tp. Hồ Chí Minh', '0904885310', 'ngocloan@gmail.com', 'NSHP', 'CNHP', 20000000,'ngocloan@gmail.com');
+execute  THEM_NV_LUONG('NV16', 'Trần Gia Linh', ' 8 Đồng Khởi, Q. 1', '01685432118', 'gialinh@gmail.com', 'KHHP', 'CNHP', 20000000,'gialinh@gmail.com');
+execute  THEM_NV_LUONG('NV17', 'Nguyễn Lệ', ' 97 Bùi Viện, Q. 1, TP. Hồ Chí Minh', '016752145365', 'lenguyen@gmail.com', 'KTHP', 'CNHP', 20000000,'lenguyen@gmail.com');
+execute  THEM_NV_LUONG('NV18', 'Trần Gia Hân', '35 đường ba tháng hai, Hồ Chí Minh', '016485265842', 'giahan@gmail.com', 'NSCT', 'CNCT', 20000000,'giahan@gmail.com');
+execute  THEM_NV_LUONG('NV19', 'Hồ Đức Hải', ' 8 Đồng Khởi, Q. 1', '0903884632', 'hoduchai@gmail.com', 'KTCT', 'CNCT', 20000000);
+execute  THEM_NV_LUONG('NV20', 'Trần Thiệu Hải', 'Võ Văn Ngân, Thủ Đức, Hồ Chí Minh', '0904885310', 'thieuhaitran@gmail.com', 'KHCT', 'CNCT', 20000000,'thieuhaitran@gmail.com');
 execute capNhatTruongPhongBan('NV06', 'NSHCM', '12/05/2017');
 execute capNhatTruongPhongBan('NV07', 'KTHCM', '12/05/2017');
 execute capNhatTruongPhongBan('NV08', 'KHHCM', '12/05/2017');
@@ -245,36 +245,36 @@ begin
 end;
 
 --Thêm phân công cho các dự án
-execute themNhanVien('NV21', 'La Siêu Sánh', '236 Bà Hạt quận 10 Hồ Chí Minh', '01685432118', 'lasieusanh@gmail.com', 'NSHCM', 'CNHCM', 10000000);
-execute themNhanVien('NV22', 'Trần Gia Tài', '35 đường ba tháng hai, Hồ Chí Minh', '01685432118', 'trangiatai@gmail.com', 'NSHN', 'CNHN', 10000000);
-execute themNhanVien('NV23', 'Vũ Thị Xuân', '2 Võ Văn Ngân, Thủ Đức, Hồ Chí Minh', '01685432118', 'thixuanvy@gmail.com', 'NSDN', 'CNDN', 10000000);
-execute themNhanVien('NV24', 'Bành Vĩ Hùng', '8 Đồng Khởi, Q. 1', '01685432118', 'vihung@gmail.com', 'NSHP', 'CNHP', 10000000);
-execute themNhanVien('NV25', 'Lâm Lâm', '236 Bà Hạt quận 10 Hồ Chí Minh', '01685432118', 'lamlamlam@gmail.com', 'NSCT', 'CNCT', 10000000);
-execute themNhanVien('NV26', 'Lâm Minh', '97 Bùi Viện, Q. 1, TP. Hồ Chí Minh', '01685432118', 'thanhvu@gmail.com', 'KTHCM', 'CNHCM', 10000000);
-execute themNhanVien('NV27', 'Vũ thị Thanh', '140 Lý Tự Trọng, Q. 1', '01685432118', 'vuthithanh@gmail.com', 'KTHN', 'CNHN', 10000000);
-execute themNhanVien('NV28', 'Trần Phương Trang', '236 Bà Hạt quận 10 Hồ Chí Minh', '01685432118', 'phuongtrang@gmail.com', 'KTDN', 'CNDN', 10000000);
-execute themNhanVien('NV29', 'Trần Bá Kiến', '97 Bùi Viện, Q. 1, TP. Hồ Chí Minh', '01685432118', 'bakien@gmail.com', 'KTHP', 'CNHP', 10000000);
-execute themNhanVien('NV30', 'Nguyễn Thị Phụng', 'Võ Văn Ngân, Thủ Đức, Hồ Chí Minh', '01685432118', 'hat@gmail.com', 'KTCT', 'CNCT', 10000000);
-execute themNhanVien('NV31', 'Hoàng Anh Tú', '35 đường ba tháng hai, Hồ Chí Minh', '01685432118', 'hatu@gmail.com', 'KHHCM', 'CNHCM', 10000000);
-execute themNhanVien('NV32', 'Nguyễn Bình An', '8 Đồng Khởi, Q. 1', '01685432118', 'binhan@gmail.com',  'KHHN', 'CNHN', 10000000);
-execute themNhanVien('NV33', 'Nguyễn An Bình', '140 Lý Tự Trọng, Q. 1', '01685432118', 'anbinh@gmail.com',  'KHDN', 'CNDN', 10000000);
-execute themNhanVien('NV34', 'Hà Bội Tuyền', 'Võ Văn Ngân, Thủ Đức, Hồ Chí Minh', '01685432118', 'boituyen@gmail.com',  'KHHP', 'CNHP', 10000000);
-execute themNhanVien('NV35', 'Trần Mỹ Linh', '35 đường ba tháng hai, Hồ Chí Minh', '01685432118', 'mylinh@gmail.com',  'KHCT', 'CNCT', 10000000);
-execute themNhanVien('NV36', 'Vương Cấm', 'Võ Văn Ngân, Thủ Đức, Hồ Chí Minh', '01685432118', 'vuongcam@gmail.com', 'NSHCM', 'CNHCM', 5000000);
-execute themNhanVien('NV37', 'Vương Ngọc Tú', '8 Đồng Khởi, Q. 1', '016485265842', 'ngoctu@gmail.com', 'NSHN', 'CNHN', 5000000);
-execute themNhanVien('NV38', 'Thi Đức Linh', '236 Bà Hạt quận 10 Hồ Chí Minh', '016485265842', 'duclinhthi@gmail.com', 'NSDN', 'CNDN', 5000000);
-execute themNhanVien('NV39', 'Vương Bửu Linh', '157 Pasteur, Q. 3, Tp. Hồ Chí Minh', '016485265842', 'buulinhvuong@gmail.com', 'NSHP', 'CNHP', 5000000);
-execute themNhanVien('NV40', 'Tăng Gia Bảo', '140 Lý Tự Trọng, Q. 1', '01685432118', 'tanggiabao@gmail.com', 'NSCT', 'CNCT', 5000000);
-execute themNhanVien('NV41', 'Trần Hữu Phước', '93 Hoàng Hoa Thám, Bình Thạnh, Hồ Chí Minh', '016485265842', 'huuphuoctran@gmail.com', 'KTHCM', 'CNHCM', 5000000);
-execute themNhanVien('NV42', 'Bùi Khánh Văn', 'Võ Văn Ngân, Thủ Đức, Hồ Chí Minh', '016485265842', 'buikhanhvan@gmail.com', 'KTHN', 'CNHN', 5000000);
-execute themNhanVien('NV43', 'La Trung Tín', '140 Lý Tự Trọng, Q. 1', '016485265842', 'trungtinla@gmail.com', 'KTDN', 'CNDN', 5000000);
-execute themNhanVien('NV44', 'La Kỳ Hân', '8 Đồng Khởi, Q. 1', '016485265842', 'kyhan@gmail.com', 'KTHP', 'CNHP', 5000000);
-execute themNhanVien('NV45', 'Nguyễn Phương Uyên', '93 Hoàng Hoa Thám, Bình Thạnh, Hồ Chí Minh', '01685432118', 'phuonguyen@gmail.com', 'KTCT', 'CNCT', 5000000);
-execute themNhanVien('NV46', 'Đàm Lê Quỳnh Giao', '93 Hoàng Hoa Thám, Bình Thạnh, Hồ Chí Minh', '016485265842', 'quynhgiao@gmail.com', 'KHHCM', 'CNHCM', 5000000);
-execute themNhanVien('NV47', 'Trần Thu Thảo', 'Võ Văn Ngân, Thủ Đức, Hồ Chí Minh', '016485265842', 'thuthao@gmail.com', 'KHHN', 'CNHN', 5000000);
-execute themNhanVien('NV48', 'Châu Kiệt Luân', '8 Đồng Khởi, Q. 1', '', 'kietluanchau@gmail.com', 'KHDN', 'CNDN', 5000000);
-execute themNhanVien('NV49', 'Châu Nhuận Phat', '157 Pasteur, Q. 3, Tp. Hồ Chí Minh', '01685432118', 'cnp@gmail.com', 'KHHP', 'CNHP', 5000000);
-execute themNhanVien('NV50', 'Lâm Phong', '236 Bà Hạt quận 10 Hồ Chí Minh', '016485265842', 'lamphong@gmail.com', 'KHCT', 'CNCT', 5000000);
+execute  THEM_NV_LUONG('NV21', 'NV21', '236 Bà Hạt quận 10 Hồ Chí Minh', '01685432118', 'lasieusanh@gmail.com', 'NSHCM', 'CNHCM', 10000000);
+execute  THEM_NV_LUONG('NV22', 'NV22', '35 đường ba tháng hai, Hồ Chí Minh', '01685432118', 'trangiatai@gmail.com', 'NSHN', 'CNHN', 10000000);
+execute  THEM_NV_LUONG('NV23', 'NV23', '2 Võ Văn Ngân, Thủ Đức, Hồ Chí Minh', '01685432118', 'thixuanvy@gmail.com', 'NSDN', 'CNDN', 10000000);
+execute  THEM_NV_LUONG('NV24', 'NV24', '8 Đồng Khởi, Q. 1', '01685432118', 'vihung@gmail.com', 'NSHP', 'CNHP', 10000000);
+execute  THEM_NV_LUONG('NV25', 'NV25', '236 Bà Hạt quận 10 Hồ Chí Minh', '01685432118', 'lamlamlam@gmail.com', 'NSCT', 'CNCT', 10000000);
+execute  THEM_NV_LUONG('NV26', 'NV26', '97 Bùi Viện, Q. 1, TP. Hồ Chí Minh', '01685432118', 'thanhvu@gmail.com', 'KTHCM', 'CNHCM', 10000000);
+execute THEM_NV_LUONG('NV27', 'NV27', '140 Lý Tự Trọng, Q. 1', '01685432118', 'vuthithanh@gmail.com', 'KTHN', 'CNHN', 10000000);
+execute  THEM_NV_LUONG('NV28', 'NV28', '236 Bà Hạt quận 10 Hồ Chí Minh', '01685432118', 'phuongtrang@gmail.com', 'KTDN', 'CNDN', 10000000);
+execute  THEM_NV_LUONG('NV29', 'NV29', '97 Bùi Viện, Q. 1, TP. Hồ Chí Minh', '01685432118', 'bakien@gmail.com', 'KTHP', 'CNHP', 10000000);
+execute  THEM_NV_LUONG('NV30', 'NV30', 'Võ Văn Ngân, Thủ Đức, Hồ Chí Minh', '01685432118', 'hat@gmail.com', 'KTCT', 'CNCT', 10000000);
+execute  THEM_NV_LUONG('NV31', 'NV31', '35 đường ba tháng hai, Hồ Chí Minh', '01685432118', 'hatu@gmail.com', 'KHHCM', 'CNHCM', 10000000);
+execute  THEM_NV_LUONG('NV32', 'NV32', '8 Đồng Khởi, Q. 1', '01685432118', 'binhan@gmail.com',  'KHHN', 'CNHN', 10000000);
+execute  THEM_NV_LUONG('NV33', 'NV33', '140 Lý Tự Trọng, Q. 1', '01685432118', 'anbinh@gmail.com',  'KHDN', 'CNDN', 10000000);
+execute  THEM_NV_LUONG('NV34', 'NV34', 'Võ Văn Ngân, Thủ Đức, Hồ Chí Minh', '01685432118', 'boituyen@gmail.com',  'KHHP', 'CNHP', 10000000);
+execute themNhanVien('NV35', ' NV35', '35 đường ba tháng hai, Hồ Chí Minh', '01685432118', 'mylinh@gmail.com',  'KHCT', 'CNCT', 10000000);
+execute themNhanVien('NV36', 'NV36', 'Võ Văn Ngân, Thủ Đức, Hồ Chí Minh', '01685432118', 'vuongcam@gmail.com', 'NSHCM', 'CNHCM', 5000000);
+execute themNhanVien('NV37', 'NV37', '8 Đồng Khởi, Q. 1', '016485265842', 'ngoctu@gmail.com', 'NSHN', 'CNHN', 5000000);
+execute themNhanVien('NV38', 'NV38', '236 Bà Hạt quận 10 Hồ Chí Minh', '016485265842', 'duclinhthi@gmail.com', 'NSDN', 'CNDN', 5000000);
+execute themNhanVien('NV39', 'NV39', '157 Pasteur, Q. 3, Tp. Hồ Chí Minh', '016485265842', 'buulinhvuong@gmail.com', 'NSHP', 'CNHP', 5000000);
+execute themNhanVien('NV40', 'NV40', '140 Lý Tự Trọng, Q. 1', '01685432118', 'tanggiabao@gmail.com', 'NSCT', 'CNCT', 5000000);
+execute themNhanVien('NV41', 'NV41', '93 Hoàng Hoa Thám, Bình Thạnh, Hồ Chí Minh', '016485265842', 'huuphuoctran@gmail.com', 'KTHCM', 'CNHCM', 5000000);
+execute themNhanVien('NV42', 'NV42', 'Võ Văn Ngân, Thủ Đức, Hồ Chí Minh', '016485265842', 'buikhanhvan@gmail.com', 'KTHN', 'CNHN', 5000000);
+execute themNhanVien('NV43', 'NV43', '140 Lý Tự Trọng, Q. 1', '016485265842', 'trungtinla@gmail.com', 'KTDN', 'CNDN', 5000000);
+execute themNhanVien('NV44', 'NV44', '8 Đồng Khởi, Q. 1', '016485265842', 'kyhan@gmail.com', 'KTHP', 'CNHP', 5000000);
+execute themNhanVien('NV45', 'NV45', '93 Hoàng Hoa Thám, Bình Thạnh, Hồ Chí Minh', '01685432118', 'phuonguyen@gmail.com', 'KTCT', 'CNCT', 5000000);
+execute themNhanVien('NV46', 'NV46', '93 Hoàng Hoa Thám, Bình Thạnh, Hồ Chí Minh', '016485265842', 'quynhgiao@gmail.com', 'KHHCM', 'CNHCM', 5000000);
+execute themNhanVien('NV47', 'NV47', 'Võ Văn Ngân, Thủ Đức, Hồ Chí Minh', '016485265842', 'thuthao@gmail.com', 'KHHN', 'CNHN', 5000000);
+execute themNhanVien('NV48', 'NV48', '8 Đồng Khởi, Q. 1', '', 'kietluanchau@gmail.com', 'KHDN', 'CNDN', 5000000);
+execute themNhanVien('NV49', 'NV49', '157 Pasteur, Q. 3, Tp. Hồ Chí Minh', '01685432118', 'cnp@gmail.com', 'KHHP', 'CNHP', 5000000);
+execute themNhanVien('NV50', 'NV50', '236 Bà Hạt quận 10 Hồ Chí Minh', '016485265842', 'lamphong@gmail.com', 'KHCT', 'CNCT', 5000000);
 
 execute phanCongDuAn('DA01', 'NV21', 'Trưởng dự án', 100000);
 execute phanCongDuAn('DA02', 'NV22', 'Trưởng dự án', 100000);
@@ -373,11 +373,11 @@ execute themChiTieu('Chi tiêu 1', 500000, 'DA15');
 execute themChiTieu('Chi tiêu 2', 1100000, 'DA15');
 
 --Thêm giám đốc
-execute themNhanVien('NV51', 'Trần Quốc Minh', '93 Hoàng Hoa Thám, Bình Thạnh, Hồ Chí Minh', '016485265842', 'minhquoctran@gmail.com', null, 'CNHCM', 50000000);
-execute themNhanVien('NV52', 'Trần Thanh Thảo', 'Võ Văn Ngân, Thủ Đức, Hồ Chí Minh', '016485265842', 'thanhthaotran@gmail.com', null, 'CNHN', 50000000);
-execute themNhanVien('NV53', 'Thành Long', '8 Đồng Khởi, Q. 1', '', 'longthanh@gmail.com', null, 'CNDN', 50000000);
-execute themNhanVien('NV54', 'Nguyễn Tuyết Nhi', '157 Pasteur, Q. 3, Tp. Hồ Chí Minh', '01685432118', 'ntn@gmail.com', null, 'CNHP', 50000000);
-execute themNhanVien('NV55', 'Bành Vĩ Quân', '236 Bà Hạt quận 10 Hồ Chí Minh', '016485265842', 'viquanbanh@gmail.com', null, 'CNCT', 50000000);
+execute THEM_NV_LUONG('NV51', 'NV51', '93 Hoàng Hoa Thám, Bình Thạnh, Hồ Chí Minh', '016485265842', 'minhquoctran@gmail.com', null, 'CNHCM', 50000000,'minhquoctran@gmail.com');
+execute THEM_NV_LUONG('NV52', 'NV52', 'Võ Văn Ngân, Thủ Đức, Hồ Chí Minh', '016485265842', 'thanhthaotran@gmail.com', null, 'CNHN', 50000000,'thanhthaotran@gmail.com');
+execute THEM_NV_LUONG('NV53', 'NV53', '8 Đồng Khởi, Q. 1', '', 'longthanh@gmail.com', null, 'CNDN', 50000000,'longthanh@gmail.com');
+execute THEM_NV_LUONG('NV54', 'NV54', '157 Pasteur, Q. 3, Tp. Hồ Chí Minh', '01685432118', 'ntn@gmail.com', null, 'CNHP', 50000000,'ntn@gmail.com');
+executeTHEM_NV_LUONG('NV55', 'NV55', '236 Bà Hạt quận 10 Hồ Chí Minh', '016485265842', 'viquanbanh@gmail.com', null, 'CNCT', 50000000,'viquanbanh@gmail.com');
 
 --Tạo user
 declare
