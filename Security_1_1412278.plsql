@@ -1,3 +1,19 @@
+create table NhanVien
+(
+  maNV varchar2(10),
+  hoTen varchar2(50),
+  diaChi varchar2(50),
+  dienThoai varchar2(12),
+  Email varchar2(50),
+  maPhong varchar2(10),
+  chiNhanh varchar2(10),
+  luong varchar(200),
+  khoa varchar (200),
+  constraint PK_NhanVien primary key (maNV),
+  constraint Check_Luong check (luong >= 0)
+);
+
+
 CREATE OR REPLACE PROCEDURE THEM_NV_LUONG
 (
   manv in VARCHAR2,

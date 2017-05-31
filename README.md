@@ -24,7 +24,7 @@ Yêu cầu **bắt buộc**
 4. [x] Tạo các role cho các vị trí phù hợp cho công ty. (**1412274**)
 5. [x] Giải pháp mã hóa thông tin lương để chỉ nhân viên được phép xem lương của mình. (**1412278**)
 6. [x] Xây dựng giải pháp để nhân viên và trưởng dự án xác định thông tin lương có đúng là do trưởng dự án thiết lập không. (**1412274**)
-7. [x] Chỉ trưởng dự án được phép xem và cập nhật thông tin chi tiêu của dự án của mình. (**MSSV**)
+7. [x] Chỉ trưởng dự án được phép xem và cập nhật thông tin chi tiêu của dự án của mình. (**1412278**)
 8. [x] Xây dựng giải pháp cho phép trưởng dự án mã hóa thông tin chi tiêu của dự án của mình và chỉ cho phép một số người dùng nhất định giải mã thông tin này. (**1412414**)
 
 Liệt kê các **yêu cầu nâng cao** đã thực hiện:
@@ -43,7 +43,8 @@ Link ảnh GIF demo ứng dụng:
 ![Video Walkthrough](https://github.com/ATBMHTTT-2017/lab02-1412274-1412278-1412414/blob/security_04_1412414/demo/TruongDAXemDACuaMinh.gif)
 #### Một số nhân viên khác trưởng dự án được xem thông tin chi tiêu
 ![Video Walkthrough](https://github.com/ATBMHTTT-2017/lab02-1412274-1412278-1412414/blob/security_04_1412414/demo/MotSoNhanVienDuocXem.gif)
-
+### Chỉ trưởng dự án được phép xem và cập nhật thông tin chi tiêu của dự án của mình.
+![Video Walkthrough](https://github.com/ATBMHTTT-2017/lab02-1412274-1412278-1412414/blob/security_04_1412414/demo/sec_3_1412278.gif)
 Tạo ảnh GIF với chương trình [LiceCap](http://www.cockos.com/licecap/).
 
 
