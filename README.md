@@ -1,11 +1,11 @@
-# BT-ATBMHTTT-2 - *Name of your app*
+﻿# BT-ATBMHTTT-2 - *Name of your app*
 
 **Name of your app** là một bài tập 2 tại môn ATBMHTTT. Bài tập yêu cầu sinh viên tạo cơ sở dữ liệu, mã hóa theo các yêu cầu.
 
 Thành viên:
 * [x] **1412274** Nguyễn Hoàng Kim (1412274-NHKim)
 * [x] **1412278** Phan Khánh Lâm (tên tài khoản github)
-* [x] **1412414** Vương Thiên Phú (tên tài khoản github)
+* [x] **1412414** Vương Thiên Phú (1412414)
 
 ## Yêu cầu
 
@@ -13,8 +13,8 @@ Sinh viên check vào các mục bên dưới và ghi mã sinh viên đã làm v
 
 Yêu cầu **GIT**
 * [x] Có sử dụng GIT.
-* [x] Sử dụng GIT theo Centralized Workflow.
-* [ ] Sử dụng GIT theo Feature Branch Workflow.
+* [ ] Sử dụng GIT theo Centralized Workflow.
+* [x] Sử dụng GIT theo Feature Branch Workflow.
 * [ ] Sử dụng GIT theo Gitflow Workflow.
 
 Yêu cầu **bắt buộc**
@@ -25,7 +25,7 @@ Yêu cầu **bắt buộc**
 * [ ] Giải pháp mã hóa thông tin lương để chỉ nhân viên được phép xem lương của mình. (**MSSV**)
 * [x] Xây dựng giải pháp để nhân viên và trưởng dự án xác định thông tin lương có đúng là do trưởng dự án thiết lập không. (**1412274**)
 * [ ] Chỉ trưởng dự án được phép xem và cập nhật thông tin chi tiêu của dự án của mình. (**MSSV**)
-* [ ] Xây dựng giải pháp cho phép trưởng dự án mã hóa thông tin chi tiêu của dự án của mình và chỉ cho phép một số người dùng nhất định giải mã thông tin này. (**MSSV**)
+* [x] Xây dựng giải pháp cho phép trưởng dự án mã hóa thông tin chi tiêu của dự án của mình và chỉ cho phép một số người dùng nhất định giải mã thông tin này. (**1412414**)
 
 Liệt kê các **yêu cầu nâng cao** đã thực hiện:
 * [ ] Chức năng 1
@@ -34,8 +34,11 @@ Liệt kê các **yêu cầu nâng cao** đã thực hiện:
 ## Demo
 
 Link ảnh GIF demo ứng dụng:
-
-![Video Walkthrough](demo.gif)
+### Security_04_1412414
+#### Encrypt tên chi tiêu và số tiền
+![Video Walkthrough](https://github.com/ATBMHTTT-2017/lab02-1412274-1412278-1412414/blob/security_04_1412414/demo/MaHoa.gif)
+#### Decrypt tên chi tiêu và số tiền
+![Video Walkthrough](https://github.com/ATBMHTTT-2017/lab02-1412274-1412278-1412414/blob/security_04_1412414/demo/GiaiMa.gif)
 
 Tạo ảnh GIF với chương trình [LiceCap](http://www.cockos.com/licecap/).
 
