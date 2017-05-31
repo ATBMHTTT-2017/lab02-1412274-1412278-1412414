@@ -39,6 +39,10 @@ Link ảnh GIF demo ứng dụng:
 ![Video Walkthrough](https://github.com/ATBMHTTT-2017/lab02-1412274-1412278-1412414/blob/security_04_1412414/demo/MaHoa.gif)
 #### Decrypt tên chi tiêu và số tiền
 ![Video Walkthrough](https://github.com/ATBMHTTT-2017/lab02-1412274-1412278-1412414/blob/security_04_1412414/demo/GiaiMa.gif)
+#### Trưởng dự án chỉ được xem dự án của mình
+![Video Walkthrough](https://github.com/ATBMHTTT-2017/lab02-1412274-1412278-1412414/blob/security_04_1412414/demo/TruongDAXemDACuaMinh.gif)
+#### Một số nhân viên khác trưởng dự án được xem thông tin chi tiêu
+![Video Walkthrough](https://github.com/ATBMHTTT-2017/lab02-1412274-1412278-1412414/blob/security_04_1412414/demo/MotSoNhanVienDuocXem.gif)
 
 Tạo ảnh GIF với chương trình [LiceCap](http://www.cockos.com/licecap/).
 
