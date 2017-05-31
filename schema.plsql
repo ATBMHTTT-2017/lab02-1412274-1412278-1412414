@@ -3,11 +3,11 @@
 --ALTER TABLE NhanVien MODIFY(maNV Generated as Identity (START WITH 1));
 --alter pluggable database all open;
 --show pdbs;
---CREATE or REPLACE trigger OPEN_ALL_PLUGGABLES 
---   after startup 
---   on  database 
---BEGIN 
---   execute immediate 'alter pluggable database all open'; 
+--CREATE or REPLACE trigger OPEN_ALL_PLUGGABLES
+--   after startup
+--   on  database
+--BEGIN
+--   execute immediate 'alter pluggable database all open';
 --END open_all_pdbs;
 --connect system/vuongngockim;
 --alter session set container = PDBDB12C;
@@ -22,9 +22,10 @@ create table NhanVien
   Email varchar2(50),
   maPhong varchar2(10),
   chiNhanh varchar2(10),
-  luong number,
+  luong varchar(200),
+  khoa varchar (200),
   constraint PK_NhanVien primary key (maNV),
-  constraint Check_Luong check (luong >= 0) 
+  constraint Check_Luong check (luong >= 0)
 );
 
 create table ChiNhanh
@@ -70,7 +71,7 @@ create table DuAn
 );
 
 create table PhanCong
-( 
+(
   maNV varchar2(10),
   duAn varchar2(10),
   vaiTro varchar2(50),
